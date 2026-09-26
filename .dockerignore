@@ -1,0 +1,9 @@
+stockfish/
+_vendor/
+distill/
+examples/
+chess-annotator-lora*/
+*.zip
+**/__pycache__/
+*.sqlite3
+.env

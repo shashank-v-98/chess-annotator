@@ -1,0 +1,53 @@
+# Secrets -- never commit these
+.env
+*.key
+# Groq API key stored in C:\Users\shank
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Generated data / model artifacts (large, regenerable -- don't commit)
+distill/data/**/*.jsonl
+examples/distill_games/*.pgn
+*.lora/
+chess-annotator-lora*/
+
+# local Stockfish engine binary (downloaded, not committed)
+stockfish/
+webapp_data.sqlite3
+
+# Merged/quantized student and llama.cpp (large, regenerable)
+student-v3-merged/
+*.gguf
+llama.cpp/
+llama_server.log
+
+# Downloads, local state, logs
+*.zip
+*.sqlite3
+*.log
+distill/data/_to_delete/
+/*.pgn
+
+# Personal notes (not part of the public project)
+DAY_PLAN.md
+TALKING_POINTS.md
+RESUME_SUMMARY.md
+
+# Fischer-Spassky analysis files: kept locally, not published
+examples/fischer_spassky*
+
+# Earlier experiments: kept locally, not published
+distill/_build_notebook.py
+distill/train_on_kaggle.ipynb
+distill/generate_dataset.py
+distill/split_dataset.py
+distill/eval_test_set.py
+distill/judge_vs_human_commentary.py
+distill/check_positional.py
+distill/smoke_app_commentary.py
+distill/strip_pgn_comments.py
+distill/data/v2/
+examples/sample_output.md

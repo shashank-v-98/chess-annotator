@@ -1,0 +1,15 @@
+# Core (always needed, local machine)
+python-chess>=1.10.0
+requests>=2.31.0
+
+# Only needed for --backend local (running a small model on your own machine,
+# e.g. evaluating a fine-tuned adapter outside Kaggle)
+# transformers>=4.44.0
+# torch>=2.2.0
+# accelerate>=0.30.0
+# peft>=0.11.0             # to load a LoRA adapter via --adapter
+
+# --- Kaggle notebook (distill/train_v3_on_kaggle.ipynb) ---
+# Installed by the notebook's own `!pip install` cell, not needed locally:
+#   peft, trl, accelerate, datasets, evaluate, rouge_score
+# transformers/torch/matplotlib/numpy are preinstalled on Kaggle's Python image.
