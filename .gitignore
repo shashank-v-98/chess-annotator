@@ -51,3 +51,7 @@ distill/smoke_app_commentary.py
 distill/strip_pgn_comments.py
 distill/data/v2/
 examples/sample_output.md
+
+# Demo recording sources
+raw.mp4
+demo.mp4

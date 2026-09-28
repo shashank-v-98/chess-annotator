@@ -2,6 +2,8 @@
 
 Load a chess game, watch it play out on the board, and read a short commentary on every move as it happens.
 
+![Chess Annotator demo](docs/demo.gif)
+
 The commentary comes from a small language model (Qwen2.5-1.5B) that I trained for this job. It never works out the chess on its own. Stockfish and some board analysis code decide the facts for each move: the evaluation before and after, the best alternative, the likely reply, and ideas such as pins, forks, open files or pawn structure. The model only turns those facts into a few readable sentences. That keeps it small enough to run on an ordinary laptop CPU with no GPU and no API costs.
 
 ## What you can do with it
